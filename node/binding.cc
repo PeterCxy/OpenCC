@@ -23,9 +23,6 @@ class OpenccBinding : public Nan::ObjectWrap {
     Nan::Callback *callback;
     Optional<opencc::Exception> ex;
 
-    //ConvertRequest() {
-	//}
-
     ConvertRequest()
         : instance(nullptr), ex(Optional<opencc::Exception>::Null()) {
     }
